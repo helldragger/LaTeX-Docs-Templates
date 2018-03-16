@@ -1,0 +1,430 @@
+\documentclass[
+	headsepline=on,
+	footsepline=on,
+	twoside=off,
+	abstract=on,
+	DIV=10
+]{scrreprt}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[english, french]{babel}
+\usepackage{multirow}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[allbordercolors=white]{hyperref}
+\usepackage{mdframed}
+\usepackage{pgfplotstable}
+\usepackage{tikz-3dplot}
+\usepackage[OT1]{fontenc}
+\usepackage{lipsum}
+
+\usepackage[bottom=2cm,footskip=8mm]{geometry}
+
+\newmdenv[
+rightline=false,
+topline=false,
+bottomline=false,
+backgroundcolor=BurntOrange!5,
+fontcolor=BrickRed,
+linecolor=Red,
+linewidth=1pt]{problem}
+
+
+\newmdenv[
+rightline=false,
+topline=false,
+bottomline=false,
+backgroundcolor=ForestGreen!5,
+fontcolor=OliveGreen,
+linecolor=Green,
+linewidth=1pt]{result}
+
+
+\newmdenv[
+rightline=false,
+topline=false,
+bottomline=false,
+backgroundcolor=Cyan!5,
+fontcolor=Blue,
+linecolor=NavyBlue,
+linewidth=1pt]{info}
+
+% Gestion d'abstracts multiples
+
+\newenvironment{abstractpage}
+{\cleardoublepage\vspace*{\fill}\thispagestyle{empty}}
+{\vfill\cleardoublepage}
+
+\renewenvironment{abstract}[1]
+{\bigskip\selectlanguage{#1}%
+	\begin{center}\bfseries\abstractname\end{center}}
+{\par\bigskip}
+
+% Gestion des keywords
+
+\newcommand{\keywords}{\sffamily\textit{Keywords : }\bfseries}
+
+%Page style
+
+\pagestyle{headings}
+\pagenumbering{arabic}
+
+
+%Title page
+
+\titlehead{
+	\includegraphics[width=0.25\textwidth]{pics/UNICAEN-logo-NOIR-horizontal.png}
+	\hfill
+	%\includegraphics[width=0.25\textwidth]{pics/}
+}
+\subject{
+	\small
+	Université de Caen Normandie\\
+	UFR des Sciences\\
+	Département Informatique\\
+	\hfill\\
+	2ème année de licence d'informatique
+}
+\title{
+	\Huge \bfseries PROJECT TITLE
+}
+\subtitle{
+	Mémoire de conduite de projet / Mémoire ou Rapport de stage\\
+	\hfill\\
+	{\normalfont Organisation d'accueil du stagiaire}
+}
+\author{
+	\small
+	\includegraphics[ height=0.12\textheight]{pics/dickbutt.jpg}\\
+	\hfill\\
+	Autheur TRUCMUCHE \\
+	Oteur DICIDANT
+}
+\date{}
+\publishers{
+	\small
+	\begin{minipage}{0.6\textwidth}
+		Maître de stage : Machin BIDULE\\
+		Directeur / Tuteur du projet ou du stage : Bali BALO\\
+		\\
+		JURY : Tai NHULLE et Toa OSSY\\
+		\textit{(si composition du jury connue)}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.35\textwidth}
+		Année universitaire : 20-- / 20--\\
+		Stage effectué du --/-- au  --/--\\
+		\\
+		Soutenu le -- juin --\\
+		\textit{(si date connue)}
+	\end{minipage}
+}
+
+\makeglossary
+
+\begin{document}
+
+	
+	\maketitle
+	
+	\pagenumbering{roman}
+	
+	\tableofcontents
+	\listoffigures
+	\listoftables
+	
+	\chapter*{Remerciements}
+		\paragraph{} 
+			Nous tenons à remercier notre esclave et tuteur M. Machin TRUC, notre boulanger M. Ange PADPIN pour leur investissement blablabla.
+			
+			
+			Nous remercions -----------------------.
+			Nous remercions également --------------.
+			
+			
+			Nous remercions ---------------. 
+		
+	\clearpage
+	
+	\begin{abstractpage}
+		\begin{abstract}{french}
+			\lipsum[1]
+		\end{abstract}
+	
+		\begin{abstract}{english}
+			\lipsum[1]
+		\end{abstract}
+		\hfill\\
+		\keywords{test lol boup incroyable rassuré}
+	\end{abstractpage}
+
+	
+	
+	
+	\pagenumbering{arabic}
+
+	\chapter{Introduction}
+		\section{Présentation de <Organisation>}
+			\paragraph{}
+			%Date de création, raison sociale, activités, 
+	
+			%Localisation de l'organisation
+			
+		\section{La mission}
+			\paragraph{Que recherche <Organisation>?}
+			%Quel est l'intérêt de la mission  pour l'organisation
+		
+			\paragraph{Que recherchons-nous?}
+			%Quel est l'intérêt de la mission  pour les étudiants
+			
+			\paragraph{Quel est le problème à régler?}
+			%Antécédents
+			
+			\paragraph{Sur quoi allons-nous nous concentrer?}
+			%problématique
+			
+			\begin{problem}
+				\sffamily
+				PROBLEMATIQUE
+			\end{problem}
+
+		\section{Procédure}
+			\subsection{objectif analyse}
+				\paragraph{Focus 1.1}
+				%Résumé substantiel et explicite du contenu de la partie 1
+				
+				\paragraph{Focus 1.2}
+				%etc etc...
+			
+			\subsection{objectif déroulement/developpement}
+				\paragraph{Focus 2.1}
+				
+				\paragraph{Focus 2.2}
+				
+				
+			\subsection{objectif tests/polissage/conclusions}
+				\paragraph{Focus 3.1}
+				
+				\paragraph{Focus 3.2}
+				
+		
+	\part{Analyse}
+		\paragraph{Intro partielle analyse}
+		%intro partielle de la partie 
+		
+		\section{Contexte}
+		\section{Objectif général du projet}
+		\section{Enjeux du projet}
+		\section{Objectifs à atteindre}
+		\section{Backlog}
+		\section{Répartition des tâches}
+			\paragraph{Répartition par personne}
+		
+			\subsection{Diagramme de Gantt partie 1}
+			%\includegraphics[width=0.7\textwidth]{pics/gantt1.png}
+			
+			\subsection{Diagramme de Gantt partie 2}
+			%\includegraphics[width=0.7\textwidth]{pics/gantt2.png}
+			% etc...
+		\section{Spécifications}
+			\subsection{Diagramme de cas d'utilisations}
+			
+			\subsection{Format, stockage et utilisation des données}
+			
+			\subsection{Contraintes techniques}
+		
+		\section{Choix techniques}
+			\subsection{Schémas de conception}
+			
+			\subsection{Conduite de projet}
+			
+			\subsection{Création de X}
+			
+			\subsection{Outils de développement}
+			
+				\subsubsection{Langages utilisés}
+				
+				\subsubsection{Outils de programmation}
+				
+				\subsubsection{Bibliothèques utilisées}
+				
+			\subsection{Interface}
+		
+		\paragraph{Conclu partielle analyse}
+		% Conclu partielle
+			
+	\part{Réalisation}
+	
+		\paragraph{Intro partielle dev}
+		%%%%%%%%%%%%% PREMIER TRUC IMPORTANT
+		\chapter{Element important du projet 1}
+		
+			\section{Nécessités}
+			
+				\paragraph{but général de l'element}
+				Genre ouais on as besoin d'un moyen de calculer efficacement et rapidement des données de simulation de bonbon qui se font manger pour le projet.
+				 
+			
+			\section{Problème}
+			
+				\paragraph{probleme 1}
+				blabla bla vitesse. besoin rapidité mais consomme truc genre memoire.
+				
+				\paragraph{probleme 2}
+				blabla besoin d economiser de la memoire ou un truc mais contraintes de vitesse sinon.
+			
+				\begin{problem}
+					PROBLEMATIQUE QUI COMBINE ET RESUME LES PROBLEMES SUR COMMENT BIEN ALLIER LES DEUX DANS NOTRE CAS.
+				\end{problem}
+			
+			\section{Approches possibles}
+			
+				\paragraph{Approche 1}
+				résumé de ce que c'est, pour et contre, difference avec les autres solutions
+				
+				
+				\paragraph{Approche 1}
+				résumé de ce que c'est, pour et contre, difference avec les autres solutions
+			
+			\section{Approche utilisée}
+			
+				\paragraph{Approche finalement choisie}
+				Les avantages qui ont fait prendre cette décision résumés et plus de details sur les bons cotés de cette décision
+			
+				\begin{result}
+					RESUME DE LA DECISION PRISE
+				\end{result}
+				
+			\section{Remarques sur les résultats obtenus}
+			
+				\paragraph{probleme X}
+				C'etait pas tip top au final comme solution, on as eu un probleme avec X, ce n'etait pas le meilleur des choix et avons rencontré des difficultés que l'on explique rapidement ici.
+				
+			\section{Pistes d'amélioration}
+			
+				\paragraph{meilleures approches}
+				
+				\paragraph{potentielle optimisation}
+				
+				\paragraph{potentiel polissage}
+		
+		%%%%%%%%%%%%%% AUTRE TRUC IMPORTANT
+		%\chapter{PARTIE}
+		
+		%\section{Nécessités}
+		
+		%\paragraph{}
+		
+		%\section{Problème}
+		
+		%\paragraph{}
+		
+		%\begin{problem}
+		
+		%\end{problem}
+		
+		%\section{Approches possibles}
+		
+		%\paragraph{}
+		
+		%\section{Approche utilisée}
+		
+		%\paragraph{}
+		
+		%\begin{result}
+		
+		%\end{result}
+		
+		%\section{Remarques sur les résultats obtenus}
+		
+		%\paragraph{}
+		
+		%\section{Pistes d'amélioration}
+		
+		%\paragraph{}
+		
+		
+		\paragraph{Conclu partielle dev}
+	
+	\part{Problèmes, tests et expérimentations}
+	
+		\chapter{Problèmes rencontrés}
+		
+			\section{Problème majeur 1}
+			\section{Problème majeur 2}
+			
+			\section{Problème mineur 1}
+			\section{Problème mineur 2}
+
+		\chapter{Tests}
+			\section{Fonctionnalité testée 1}
+				\paragraph{But du test}
+				\paragraph{Type de test utilisé}
+
+			\section{Fonctionnalité testée 2}
+				\paragraph{But du test}
+				\paragraph{Type de test utilisé}
+				
+		\chapter{Expérimentations}
+			\section{Expérimentation 1}
+			\section{Expérimentation 2}
+			
+			
+		\chapter{Conclusion}
+			\paragraph{Résumé des objectifs au résultat final}
+			
+			\paragraph{Résumé du résultat final comparé aux résultats escomptés}
+			
+			\paragraph{Résumé des liens avec les connaissances et compétences universitatires}
+			
+			\paragraph{Résumé sur l'enrichissement personnel}
+			
+			\paragraph{Résumé difficultés rencontrées}
+			
+			\paragraph{Résumé perspectives envisagées, appréciation perso, poursuite..}
+		
+			\cleardoublepage
+			\pagebreak
+		\pagenumbering{Roman}
+			
+		\part{Annexes}
+			
+			\begin{thebibliography}{}
+			\end{thebibliography}
+	
+	%\chapter{PARTIE}
+	
+	%\section{Nécessités}
+	
+	%\paragraph{}
+	
+	%\section{Problème}
+	
+	%\paragraph{}
+	
+	%\begin{problem}
+	
+	%\end{problem}
+	
+	%\section{Approches possibles}
+	
+	%\paragraph{}
+	
+	%\section{Approche utilisée}
+	
+	%\paragraph{}
+	
+	%\begin{result}
+	
+	%\end{result}
+	
+	%\section{Remarques sur les résultats obtenus}
+	
+	%\paragraph{}
+	
+	%\section{Pistes d'amélioration}
+	
+	%\paragraph{}
+	
+	
+\end{document}

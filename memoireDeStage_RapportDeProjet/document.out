@@ -1,0 +1,48 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Pr\351sentation de <Organisation>}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{La mission}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Proc\351dure}{chapter.1}% 4
+\BOOKMARK [2][-]{subsection.1.3.1}{objectif analyse}{section.1.3}% 5
+\BOOKMARK [2][-]{subsection.1.3.2}{objectif d\351roulement/developpement}{section.1.3}% 6
+\BOOKMARK [2][-]{subsection.1.3.3}{objectif tests/polissage/conclusions}{section.1.3}% 7
+\BOOKMARK [-1][-]{part.1}{Analyse}{}% 8
+\BOOKMARK [0][-]{section.1.4}{Contexte}{part.1}% 9
+\BOOKMARK [1][-]{section.1.5}{Objectif g\351n\351ral du projet}{section.1.4}% 10
+\BOOKMARK [1][-]{section.1.6}{Enjeux du projet}{section.1.4}% 11
+\BOOKMARK [1][-]{section.1.7}{Objectifs \340 atteindre}{section.1.4}% 12
+\BOOKMARK [1][-]{section.1.8}{Backlog}{section.1.4}% 13
+\BOOKMARK [1][-]{section.1.9}{R\351partition des t\342ches}{section.1.4}% 14
+\BOOKMARK [2][-]{subsection.1.9.1}{Diagramme de Gantt partie 1}{section.1.9}% 15
+\BOOKMARK [2][-]{subsection.1.9.2}{Diagramme de Gantt partie 2}{section.1.9}% 16
+\BOOKMARK [1][-]{section.1.10}{Sp\351cifications}{section.1.4}% 17
+\BOOKMARK [2][-]{subsection.1.10.1}{Diagramme de cas d'utilisations}{section.1.10}% 18
+\BOOKMARK [2][-]{subsection.1.10.2}{Format, stockage et utilisation des donn\351es}{section.1.10}% 19
+\BOOKMARK [2][-]{subsection.1.10.3}{Contraintes techniques}{section.1.10}% 20
+\BOOKMARK [1][-]{section.1.11}{Choix techniques}{section.1.4}% 21
+\BOOKMARK [2][-]{subsection.1.11.1}{Sch\351mas de conception}{section.1.11}% 22
+\BOOKMARK [2][-]{subsection.1.11.2}{Conduite de projet}{section.1.11}% 23
+\BOOKMARK [2][-]{subsection.1.11.3}{Cr\351ation de X}{section.1.11}% 24
+\BOOKMARK [2][-]{subsection.1.11.4}{Outils de d\351veloppement}{section.1.11}% 25
+\BOOKMARK [2][-]{subsection.1.11.5}{Interface}{section.1.11}% 26
+\BOOKMARK [-1][-]{part.2}{R\351alisation}{}% 27
+\BOOKMARK [0][-]{chapter.2}{Element important du projet 1}{part.2}% 28
+\BOOKMARK [1][-]{section.2.1}{N\351cessit\351s}{chapter.2}% 29
+\BOOKMARK [1][-]{section.2.2}{Probl\350me}{chapter.2}% 30
+\BOOKMARK [1][-]{section.2.3}{Approches possibles}{chapter.2}% 31
+\BOOKMARK [1][-]{section.2.4}{Approche utilis\351e}{chapter.2}% 32
+\BOOKMARK [1][-]{section.2.5}{Remarques sur les r\351sultats obtenus}{chapter.2}% 33
+\BOOKMARK [1][-]{section.2.6}{Pistes d'am\351lioration}{chapter.2}% 34
+\BOOKMARK [-1][-]{part.3}{Probl\350mes, tests et exp\351rimentations}{}% 35
+\BOOKMARK [0][-]{chapter.3}{Probl\350mes rencontr\351s}{part.3}% 36
+\BOOKMARK [1][-]{section.3.1}{Probl\350me majeur 1}{chapter.3}% 37
+\BOOKMARK [1][-]{section.3.2}{Probl\350me majeur 2}{chapter.3}% 38
+\BOOKMARK [1][-]{section.3.3}{Probl\350me mineur 1}{chapter.3}% 39
+\BOOKMARK [1][-]{section.3.4}{Probl\350me mineur 2}{chapter.3}% 40
+\BOOKMARK [0][-]{chapter.4}{Tests}{part.3}% 41
+\BOOKMARK [1][-]{section.4.1}{Fonctionnalit\351 test\351e 1}{chapter.4}% 42
+\BOOKMARK [1][-]{section.4.2}{Fonctionnalit\351 test\351e 2}{chapter.4}% 43
+\BOOKMARK [0][-]{chapter.5}{Exp\351rimentations}{part.3}% 44
+\BOOKMARK [1][-]{section.5.1}{Exp\351rimentation 1}{chapter.5}% 45
+\BOOKMARK [1][-]{section.5.2}{Exp\351rimentation 2}{chapter.5}% 46
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{part.3}% 47
+\BOOKMARK [-1][-]{part.4}{Annexes}{}% 48
